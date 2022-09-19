@@ -16,10 +16,10 @@ import project1 from "../images/project1.png";
 import project2 from "../images/project2.png";
 
 const Projects = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1450);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 950);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 1450);
+    setDesktop(window.innerWidth > 950);
   };
 
   useEffect(() => {
@@ -32,16 +32,22 @@ const Projects = () => {
       {isDesktop ? (
         <div>
           <div
-            style={{ width: "90%", margin: "auto", height: "200vh" }}
+            style={{ width: "85%", margin: "auto",   }}
             id="project"
           >
+            <br />
+            <br />
+            <br />
             <Center>
               <Heading
                 as="h1"
-                size="2xl"
+                size="3xl"
                 noOfLines={1}
-                style={{ marginTop: "80px" }}
+               
+                padding="20px"
+              
               >
+                
                 My <span style={{ color: "red" }}>Creative</span> Projects
               </Heading>
             </Center>
@@ -49,7 +55,7 @@ const Projects = () => {
             <br />
             <br />
 
-            <SimpleGrid minChildWidth="200px" spacing="70px">
+            <SimpleGrid minChildWidth="200px" spacing="70px" >
               <Box
                 style={{
                   padding: "20px",
@@ -202,7 +208,7 @@ const Projects = () => {
                 as="h1"
                 size="2xl"
                 noOfLines={1}
-                style={{ marginTop: "320px" }}
+                // style={{ marginTop: "320px" }}
               >
                 My <span style={{color:"red"}}>Projects</span>
               </Heading>
@@ -210,7 +216,7 @@ const Projects = () => {
 
             <br />
             <br />
-            <SimpleGrid minChildWidth="200px" spacing="40px">
+            <SimpleGrid minChildWidth="200px" spacing="80px">
               <Box
                 style={{
                   padding: "20px",
@@ -240,15 +246,13 @@ const Projects = () => {
                     yurt, shared space, or other property—represents tremendous
                     value, compared to hotels, for flexible, adventurous travel
                     consumers.
+                    <br />
+<br />
+                    Tech Stack:React,Redux,MondgoDB,Chakra Ui,NodeJs
                   </Text>
                 </Center>
                 <br />
-                <Center>
-                  <Text fontSize="16px" color="tomato">
-                    Tech Stack:
-                  </Text>
-                  React,Redux,MondgoDB,Chakra Ui,NodeJs
-                </Center>
+               
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
@@ -289,15 +293,13 @@ const Projects = () => {
                     fashion needs. Inspired by the international runways and the
                     global street scene it delivers A-grade fashion at
                     pocket-friendly prices.
+                    <br />
+<br />
+                    Tech Stack:React,Redux,MondgoDB,Chakra Ui,NodeJs
                   </Text>
                 </Center>
                 <br />
-                <Center>
-                  <Text fontSize="16px" color="tomato">
-                    Tech Stack:
-                  </Text>
-                  React,Redux,MondgoDB,Chakra Ui,NodeJs
-                </Center>
+                
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
@@ -336,11 +338,13 @@ const Projects = () => {
                     Obcaecati cum perferendis consequuntur fuga, illum ducimus
                     ullam at dolores voluptatum, quam a quaerat? Commodi omnis
                     voluptatum, ullam consequuntur quisquam enim quibusdam!
+<br />
+<br />
+                    Tech Stack:React,Redux,MondgoDB,Chakra Ui,NodeJs
                   </Text>
+
                 </Center>
-                <Center>
-                  Tech Stack:React,Redux,MondgoDB,Chakra Ui,NodeJs
-                </Center>
+               
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}

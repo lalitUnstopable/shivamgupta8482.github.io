@@ -9,19 +9,33 @@ import Contact from './Components/Contact';
 import About from './Components/About';
 import { Box, Stack } from '@chakra-ui/react';
 import Footer from './Components/Footer';
+import Projects from './Components/Projects';
 
 
 function App() {
   return (
     <div className="App">
    
-    <Navbar />
+    <Navbar  />
     <br />
-    <Footer />
+    <About />
+    <Description />
+    <br />
+    <br />
+    <br />
+    <Projects />
+    <Skills />
+    <br />
+    <br />
   <br />
   <br />
-  
+  <br /><br />
+ 
 
+    <br />
+    <Contact />
+    <Footer />
+  
 
      
     </div>

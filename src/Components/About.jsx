@@ -15,12 +15,13 @@ import image from "../images/image3.png";
 import pdf from "../images/Shivamgupta.pdf";
 import "../App.css";
 import { TypeAnimation } from "react-type-animation";
+import "../App.css";
 
 const About = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1450);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1050);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 1450);
+    setDesktop(window.innerWidth > 1050);
   };
 
   useEffect(() => {
@@ -29,11 +30,12 @@ const About = () => {
   });
 
   return (
-    <div id="about">
+    <div id="about" style={{offset:"-40"}}>
       {isDesktop ? (
         <div
           style={{
             height: "100vh",
+           
             overflow: "auto",
             display: "flex",
             justifyContent: "center",
@@ -68,6 +70,10 @@ const About = () => {
               </Center>
             </WrapItem>
 
+
+
+            
+
             <WrapItem>
               <Center>
                 <Image
@@ -85,7 +91,11 @@ const About = () => {
         </div>
       ) : (
         <div>
-          <Wrap spacing="100px" justify="center" padding="50px" id="about">
+          <Wrap
+           spacing="100px"
+            justify="center" 
+           padding="50px" 
+            id="about">
           <WrapItem>
           <Center>
               <Image

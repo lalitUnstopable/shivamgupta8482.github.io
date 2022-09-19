@@ -159,8 +159,13 @@ const Contact = () => {
       ) : (
         <div style={{ width: "70%", margin: "auto" }}>
           <div id="contact">
+            <br />
+            <br />
+            <br />
             <Center>
-              <Heading as="h2" size="xl" style={{ marginTop: "350px" }}>
+              <Heading as="h2" size="xl"
+               //style={{ marginTop: "350px" }}
+               >
               Take a <span style={{ color: "red" }}>Coffee</span> and{" "}
                 <span style={{ color: "red" }}>Chat</span> with me
               </Heading>

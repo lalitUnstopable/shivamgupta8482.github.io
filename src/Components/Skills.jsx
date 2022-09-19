@@ -111,7 +111,7 @@ const Skills = () => {
                 as="h1"
                 size="4xl"
                 noOfLines={1}
-                style={{ marginTop: "90px" }}
+                style={{ marginTop: "90px", padding: "20px", }}
               >
                 My <span style={{ color: "red" }}>Technical</span> Skills
               </Heading>
@@ -150,13 +150,14 @@ const Skills = () => {
         </div>
       ) : (
         <div>
+          <br />
           <div style={{ width: "90%", margin: "auto" }} id="skills">
             <Center>
               <Heading
                 as="h1"
                 size="xl"
                 noOfLines={1}
-                style={{ marginTop: "350px" }}
+              // style={{ marginTop: "350px" }}
               >
                 My <span style={{ color: "red" }}>Technical</span> Skills
               </Heading>

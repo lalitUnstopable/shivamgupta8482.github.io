@@ -15,11 +15,14 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 import "../App.css";
+import image from "../images/image3.png";
+import GitHubCalendar from 'react-github-calendar';
+
 const Description = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1450);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 950);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 1450);
+    setDesktop(window.innerWidth > 950);
   };
 
   useEffect(() => {
@@ -139,10 +142,14 @@ const Description = () => {
               </Wrap>
             </div>
           </div>
+         <Center>
+         <GitHubCalendar username="shivamgupta8482" />
+
+         </Center>
         </div>
       ) : (
         <div>
-          <div id="work" style={{ marginTop: "230px" }}>
+          <div id="work" >
             <div
               style={{
                 justifyContent: "center",
@@ -157,7 +164,10 @@ const Description = () => {
               </center>
               <br />
 
-              <Wrap spacing="150px" justify="center" padding="50px">
+              <Wrap 
+             // spacing="150px" 
+              justify="center" 
+              padding="50px">
               <WrapItem>
                   <Center>
                     <div >
@@ -172,7 +182,9 @@ const Description = () => {
                   </Center>
                 </WrapItem>
 
-                <WrapItem style={{ marginTop: "-50px" }}>
+                <WrapItem 
+               // style={{ marginTop: "-50px" }}
+                >
                   <Center>
                     <UnorderedList>
                       <ListItem>
