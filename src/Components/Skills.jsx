@@ -151,6 +151,8 @@ const Skills = () => {
       ) : (
         <div>
           <br />
+          <br />
+          <br />
           <div style={{ width: "90%", margin: "auto" }} id="skills">
             <Center>
               <Heading
@@ -165,7 +167,7 @@ const Skills = () => {
             <br />
             <br />
 
-            <SimpleGrid minChildWidth="130px" spacing="20px">
+            <SimpleGrid minChildWidth="130px" spacing="40px">
               {techStack.map((el) => {
                 return (
                   <Box

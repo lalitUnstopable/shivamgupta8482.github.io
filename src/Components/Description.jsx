@@ -12,11 +12,12 @@ import {
   Image,
   UnorderedList,
   List,
-  ListItem,
+  ListItem,Img,HStack,SimpleGrid,
 } from "@chakra-ui/react";
 import "../App.css";
 import image from "../images/image3.png";
 import GitHubCalendar from 'react-github-calendar';
+import { isDark } from "@chakra-ui/theme-tools";
 
 const Description = () => {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 950);
@@ -69,10 +70,10 @@ const Description = () => {
                       <Image
                         borderRadius="50px"
                         position="relative"
-                        src="https://media1.giphy.com/media/ZFiBmGVClrgxt02N9X/giphy.gif"
+                        src={image}
                         alt="Dan Abramov"
                       />
-                      <Image
+                      {/* <Image
                         borderRadius="100px"
                         boxSize="450px"
                         // marginTop="-30px"
@@ -80,7 +81,7 @@ const Description = () => {
                         marginLeft="10px"
                         src="https://htmlcolorcodes.com/assets/images/colors/rose-red-color-solid-background-1920x1080.png"
                         alt="Dan Abramov"
-                      />
+                      /> */}
                     </div>
                   </Center>
                 </WrapItem>
@@ -138,17 +139,135 @@ const Description = () => {
                       </ListItem>
                     </UnorderedList>
                   </Center>
+                  
+       
                 </WrapItem>
+
               </Wrap>
             </div>
           </div>
          <Center>
          <GitHubCalendar username="shivamgupta8482" />
+         
+         
 
-         </Center>
+         </Center><br /><br />
+         <HStack p={2} justify="center" data-aos="fade-up">
+          <SimpleGrid columns={[1, 1, 2, 2]} spacing={5}>
+            <HStack spacing={5}>
+              <Img
+                boxSize="40px"
+                src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-1.svg"
+                alt="icon"
+              />
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                1200+ Hours Practical Coding
+              </Text>
+            </HStack>
+            <HStack spacing={5}>
+              <Img
+                boxSize="40px"
+                src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-2.svg"
+                alt="icon"
+              />
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                300+ Hours Data Structures & Algorithms
+              </Text>
+            </HStack>
+            <HStack spacing={5}>
+              <Img
+                boxSize="40px"
+                src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-3.svg"
+                alt="icon"
+              />
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                100+ Hours Soft Skill Development
+              </Text>
+            </HStack>
+            <HStack spacing={5}>
+              <Img
+                boxSize="40px"
+                src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-4.svg"
+                alt="icon"
+              />
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                100+ Hours Math & Logic
+              </Text>
+            </HStack>
+            <HStack spacing={5}>
+              <Img
+                boxSize="40px"
+                src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-5.svg"
+                alt="icon"
+              />
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                80+ Mini Projects
+              </Text>
+            </HStack>
+            <HStack spacing={5}>
+              <Img
+                boxSize="40px"
+                src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-6.svg"
+                alt="icon"
+              />
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                10+ Projects{" "}
+              </Text>
+            </HStack>
+            <HStack spacing={5}>
+              <Img
+                boxSize="40px"
+                rounded="10px"
+                src="https://git-scm.com/images/logos/logomark-orange@2x.png"
+                alt="git-commit"
+              />
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                120+ Git Commits
+              </Text>
+            </HStack>
+            <HStack spacing={5}>
+              <Img
+                boxSize="40px"
+                rounded="10px"
+                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                alt="git-commit"
+              />
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                120+ Contributions in the last year
+              </Text>
+            </HStack>
+          </SimpleGrid>
+        </HStack>
+
         </div>
       ) : (
         <div>
+          <br />
+          <br />
           <div id="work" >
             <div
               style={{

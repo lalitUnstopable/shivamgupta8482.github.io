@@ -20,10 +20,10 @@ import {
 } from "@chakra-ui/react";
 
 const Contact = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1450);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1050);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 1450);
+    setDesktop(window.innerWidth > 1050);
   };
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const Contact = () => {
       {isDesktop ? (
         <div
           style={{
-            height: "100vh",
+            // height: "100vh",
             overflow: "auto",
             display: "flex",
             justifyContent: "center",
@@ -54,12 +54,12 @@ const Contact = () => {
 
             <br />
 
-            <Wrap spacing="50px" justify="center">
+            <Wrap spacing="20px" justify="center">
               <WrapItem>
                 <Center>
                   <Image
                     borderRadius="50px"
-                    width="70%"
+                    width="60%"
                     src="https://cdn.dribbble.com/users/4874/screenshots/2031709/messageincoming.gif"
                     alt="Dan Abramov"
                   />
@@ -70,14 +70,16 @@ const Contact = () => {
               <br />
               <br />
 
-              <Stack spacing={3}>
+              <Stack spacing={3} >
                 <Box
                   display="flex"
                   alignItems="center"
                   justifyContent="center"
                   width="100%"
-                  py={5}
+                  py={4}
                   gap="4"
+                 
+
                 >
                  
                   <a href="https://www.linkedin.com/in/shivam-gupta-265902226/">
@@ -91,7 +93,7 @@ const Contact = () => {
                       colorScheme="blue"
                       variant="solid"
                     >
-                      Linkdin
+                      LinkedIn
                     </Button>
                   </a>
                   <a href="https://github.com/shivamgupta8482">
@@ -158,6 +160,7 @@ const Contact = () => {
         </div>
       ) : (
         <div style={{ width: "70%", margin: "auto" }}>
+         
           <div id="contact">
             <br />
             <br />
@@ -208,7 +211,7 @@ const Contact = () => {
                       colorScheme="blue"
                       variant="solid"
                     >
-                      Linkdin
+                      LinkedIn
                     </Button>
                   </a>
                  

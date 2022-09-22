@@ -18,10 +18,10 @@ import { TypeAnimation } from "react-type-animation";
 import "../App.css";
 
 const About = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1050);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1150);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 1050);
+    setDesktop(window.innerWidth > 1150);
   };
 
   useEffect(() => {
@@ -42,8 +42,8 @@ const About = () => {
             alignItems: "center",
           }}
         >
-          <Wrap spacing="150px" justify="center" padding="55px">
-            <WrapItem>
+          <Wrap spacing="150px" justify="center" padding="55px"  style={{width:"90%"}}>
+            <WrapItem style={{padding:"10px",width:"40%"}}>
               <Center>
                 <Heading as="h2" size="xl" style={{ marginLeft: "-20px" }}>
                   Hello, My Name is
@@ -53,7 +53,7 @@ const About = () => {
                       I'm
                       <TypeAnimation
                         style={{ color: "red" }}
-                        sequence={[" Full Stack Developer.", 500, ""]}
+                        sequence={[" Full Stack Web Developer.", 500, ""]}
                         speed={40} // Must be in range between 1 and 99!
                         wrapper="span"
                         repeat={Infinity}
@@ -74,15 +74,15 @@ const About = () => {
 
             
 
-            <WrapItem>
+            <WrapItem >
               <Center>
                 <Image
                   boxSize="300px"
                   // objectFit='cover'
                   borderRadius="20%"
                   marginTop="-50px"
-                  marginLeft="20px"
-                  src={image}
+                  marginLeft="30px"
+                  src="https://www.neosao.com/assets/images/webndevelop.gif"
                   alt="Dan Abramov"
                 />
               </Center>
@@ -111,7 +111,7 @@ const About = () => {
 
             <WrapItem>
               <Center>
-              <Heading as="h2" size="xl" style={{ marginLeft: "-20px" }}>
+              <Heading as="h2" size="xl" >
                   Hello, My Name is
                   <Heading as="h2" size="3xl" style={{ marginTop: "10px" }}>
                     <span style={{ color: "red" }}>SHIVAM</span> GUPTA
@@ -119,7 +119,7 @@ const About = () => {
                       I'm
                       <TypeAnimation
                         style={{ color: "red" }}
-                        sequence={[" Full Stack Developer.", 500, ""]}
+                        sequence={[" Web Developer.", 500, ""]}
                         speed={40} // Must be in range between 1 and 99!
                         wrapper="span"
                         repeat={Infinity}

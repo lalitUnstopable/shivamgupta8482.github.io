@@ -63,7 +63,7 @@ function Navbar() {
             <Link
               to="about"
               smooth={true}
-              duration={1000}
+               duration={0}
               spy={true}
               offset={-120}
               activeClass={styles.active}
@@ -73,7 +73,7 @@ function Navbar() {
             <Link
               to="work"
               smooth={true}
-              duration={1000}
+              duration={0}
               spy={true}
               offset={-80}
               activeClass={styles.active}
@@ -84,7 +84,7 @@ function Navbar() {
             <Link
               to="project"
               smooth={true}
-              duration={1000}
+              duration={0}
               spy={true}
               offset={-40}
               activeClass={styles.active}
@@ -96,7 +96,7 @@ function Navbar() {
             <Link
               to="skills"
               smooth={true}
-              duration={1000}
+              duration={0}
               spy={true}
               offset={-40}
               activeClass={styles.active}
@@ -107,7 +107,7 @@ function Navbar() {
             <Link
               to="contact"
               smooth={true}
-              duration={1000}
+              duration={0}
               spy={true}
               offset={-80}
               activeClass={styles.active}
@@ -129,6 +129,7 @@ function Navbar() {
         borderBottom="1px"
         borderColor="gray.100"
         display={["flex", "flex", "flex", "none"]}
+      
       >
         <IconButton
           aria-label="Open Menu"
@@ -137,6 +138,7 @@ function Navbar() {
           onClick={onOpen}
           isRound={true}
           icon={<HamburgerIcon />}
+         
         />
         <Spacer />
         {/* <Social /> */}
@@ -151,9 +153,11 @@ function Navbar() {
       <Drawer
         size={["xs", "xs"]}
         isOpen={isOpen}
-        placement="top"
+        placement="right"
         onClose={onClose}
         finalFocusRef={btnRef}
+       
+    
       >
         <DrawerOverlay />
         <DrawerContent>
@@ -166,7 +170,7 @@ function Navbar() {
               <Link
                 to="home"
                 smooth={true}
-                duration={1000}
+                duration={0}
                 spy={true}
                 activeClass={styles.active}
               >
@@ -175,7 +179,7 @@ function Navbar() {
               <Link
                 to="about"
                 smooth={true}
-                duration={1000}
+                duration={0}
                 spy={true}
                  offset={50}
                 activeClass={styles.active}
@@ -185,7 +189,7 @@ function Navbar() {
               <Link
                 to="skills"
                 smooth={true}
-                duration={1000}
+                duration={0}
                 spy={true}
                  offset={50}
                 activeClass={styles.active}
@@ -195,7 +199,7 @@ function Navbar() {
               <Link
                 to="project"
                 smooth={true}
-                duration={1000}
+                duration={0}
                 spy={true}
                 // offset={50}
                 activeClass={styles.active}
@@ -205,7 +209,7 @@ function Navbar() {
               <Link
                 to="contact"
                 smooth={true}
-                duration={1000}
+                duration={0}
                 spy={true}
                 // offset={50}
                 activeClass={styles.active}

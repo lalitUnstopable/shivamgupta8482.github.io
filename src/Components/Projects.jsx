@@ -98,10 +98,10 @@ const Projects = () => {
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
-                  <a href="https://github.com/pravindnikam07/Skin-Store-Clone">
+                  <a target="_blank" href="https://github.com/pravindnikam07/Skin-Store-Clone">
                     <Button>Github</Button>
                   </a>
-                  <a href="https://skinstoreclone.netlify.app/">
+                  <a target="_blank" href="https://skinstoreclone.netlify.app/">
                     <Button>Deploy</Button>
                   </a>
                 </div>
@@ -147,10 +147,10 @@ const Projects = () => {
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
-                  <a href="https://github.com/shivamgupta8482/jcrewteam">
+                  <a target="_blank" href="https://github.com/shivamgupta8482/jcrewteam">
                     <Button>Github</Button>
                   </a>
-                  <a href="https://bejewelled-klepon-a99de5.netlify.app/">
+                  <a target="_blank" href="https://bejewelled-klepon-a99de5.netlify.app/">
                     <Button>Deploy</Button>
                   </a>
                 </div>
@@ -167,34 +167,43 @@ const Projects = () => {
                   {" "}
                   <Image
                     boxSize="200px"
-                    src="https://bit.ly/dan-abramov"
+                    width="100%"
+                    borderRadius="20px"
+                    src={project1}
                     alt="Dan Abramov"
                   />
                 </Center>
                 <br />
                 <Center>
-                  <Heading>Hrlio</Heading>
+                  <Heading>Skin Store Clone</Heading>
                 </Center>
                 <br />
                 <Center>
                   <Text>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Obcaecati cum perferendis consequuntur fuga, illum ducimus
-                    ullam at dolores voluptatum, quam a quaerat? Commodi omnis
-                    voluptatum, ullam consequuntur quisquam enim quibusdam!
+                    It's an app where house owner provides their places on rent.
+                    A vacation rental—whether a home, apartment, condo, boat,
+                    yurt, shared space, or other property—represents tremendous
+                    value, compared to hotels, for flexible, adventurous travel
+                    consumers.
                   </Text>
                 </Center>
                 <br />
                 <Center>
-                  <span style={{ color: "red" }}>Tech Stack:</span>
+                  <Text fontSize="16px" color="tomato">
+                    Tech Stack:
+                  </Text>
                   React,Redux,MondgoDB,Chakra Ui,NodeJs
                 </Center>
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
-                  <Button>Github</Button>
-                  <Button>Deploy</Button>
+                  <a target="_blank" href="https://github.com/pravindnikam07/Skin-Store-Clone">
+                    <Button>Github</Button>
+                  </a>
+                  <a target="_blank" href="https://skinstoreclone.netlify.app/">
+                    <Button>Deploy</Button>
+                  </a>
                 </div>
               </Box>
             </SimpleGrid>
@@ -319,38 +328,44 @@ const Projects = () => {
                     "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
                 }}
               >
-                <Center>
+                 <Center>
                   {" "}
                   <Image
                     boxSize="200px"
-                    src="https://bit.ly/dan-abramov"
+                    width="100%"
+                    borderRadius="20px"
+                    src={project2}
                     alt="Dan Abramov"
                   />
                 </Center>
                 <br />
                 <Center>
-                  <Heading>Hrlio</Heading>
+                  <Heading>J Crew Clone</Heading>
                 </Center>
                 <br />
                 <Center>
                   <Text>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Obcaecati cum perferendis consequuntur fuga, illum ducimus
-                    ullam at dolores voluptatum, quam a quaerat? Commodi omnis
-                    voluptatum, ullam consequuntur quisquam enim quibusdam!
-<br />
+                    It's is the one-stop online fashion destination for all the
+                    fashion needs. Inspired by the international runways and the
+                    global street scene it delivers A-grade fashion at
+                    pocket-friendly prices.
+                    <br />
 <br />
                     Tech Stack:React,Redux,MondgoDB,Chakra Ui,NodeJs
                   </Text>
-
                 </Center>
-               
+                <br />
+                
                 <br />
                 <div
                   style={{ display: "flex", justifyContent: "space-around" }}
                 >
-                  <Button>Github</Button>
-                  <Button>Deploy</Button>
+                  <a href="https://github.com/shivamgupta8482/jcrewteam">
+                    <Button>Github</Button>
+                  </a>
+                  <a href="https://bejewelled-klepon-a99de5.netlify.app/">
+                    <Button>Deploy</Button>
+                  </a>
                 </div>
               </Box>
             </SimpleGrid>
