@@ -358,7 +358,7 @@ const Projects = () => {
                 
                 <br />
                 <div
-                  style={{ display: "flex", justifyContent: "space-around" }}
+                  
                 >
                   <a href="https://github.com/shivamgupta8482/jcrewteam">
                     <Button>Github</Button>
